@@ -1,0 +1,13 @@
+<h1 style="text-align:center">Employee Details</h1>
+<table cellpadding="20px" cellspacing="0px">
+<tr customDirective class="tbl-header">
+<td>Id</td>
+<td>Name</td>
+<td>Action</td>
+</tr>
+<tr *ngFor="let employee of employeeList;let i=index;" class="tbl-row">
+<td>{{employee.id}}</td>
+<td>{{employee.name}}</td>
+<td><a href="/employeedetail/{{i}}"> view</a></td>
+</tr>
+</table>
